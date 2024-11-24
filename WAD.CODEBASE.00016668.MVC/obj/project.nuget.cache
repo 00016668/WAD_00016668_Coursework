@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0xKP5NUqJm5p9LlbTUJBNxCMnaAhDXHmUcSdT6iiEc1d2ui9hoDhJa78JZBHVoX0EtjwYv7x9Jr8/+nkeXIAhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\OneDrive\\Desktop\\WAD.CODEBASE.00016668\\WAD.CODEBASE.00016668.MVC\\WAD.CODEBASE.00016668.MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

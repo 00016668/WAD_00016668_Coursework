@@ -16,7 +16,8 @@ builder.Services.AddDbContext<ContactDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("SQLConnection")));  
 var app = builder.Build();
 
-builder.Services.AddScoped<IRepository<Contacts>, ContactRepository>();
+builder.Services.AddTransient<IRepository<Contacts>, ContactRepository>();
+builder.Services.AddTransient<IRepository<Groups>, GroupRepository>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -26,6 +27,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+
+/* app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}"); */
 
 app.MapControllers();
 
